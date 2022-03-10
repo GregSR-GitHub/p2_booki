@@ -1,0 +1,510 @@
+/*Style general*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+  }
+  .h1, h2, h3{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;;
+}
+/*Verson Bureau*/
+/* Entête */
+header{
+    width: 100%-120px;
+    max-width: 1340px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.nav_box{
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+    .nav_box a{
+        margin: 0;
+    }
+
+    .nav_box ul{
+        display: flex; 
+        align-items: center;
+    }
+    
+        .nav_box ul li {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+            .nav_box ul li a{
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+                display: block; 
+                margin: 0px 12px;
+                padding: 48px 21px 26px 21px;
+            }
+            .nav_box ul li a:hover{
+                border-top: 2px #0065FC solid;
+                color: #0065FC;
+                padding: 46px 21px 26px 21px;
+            }
+
+#logo_booki{
+height: 45px;
+margin: 0 15px;
+}
+
+/* Corps de la page */
+
+main{
+    width: 100%-120px;
+    max-width: 1340px;
+    margin: 10px auto;
+}
+
+/* Section recherche et filtres*/
+
+.top_main{
+    margin: 0 0;
+
+}
+
+h1{
+    margin: 10px 0;
+    font-size: 22px;
+}
+h1 + p{
+    margin: 3px 0;
+}
+
+.heberg_form{
+    display: flex;
+    height: 50px;
+    margin: 25px 0 35px 0;
+}
+    .heberg_form label{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: #F2F2F2;
+        width: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        padding-top: 14px;
+    }
+
+#heberg_search{
+    height: 50px;
+    width: 235px;
+    border: 1px #F2F2F2 solid;
+}
+
+.heberg_button{
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    height: 50px;
+    width: 135px;
+    border: 1px #0065FC solid;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.heberg_button:hover{
+    background-color: white;
+    color: #0065FC;
+
+}
+.heberg_button_hidden01{
+    display: none;
+}
+
+.heberg_button_hidden02{
+    display: inline;
+
+}
+
+.filter_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+    .filter_box h3{
+        line-height: 50px;
+        margin: 5px 30px 5px 0; 
+    }
+
+    .filter_box ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .filter_box ul li{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin:5px 20px 5px 0;
+        }
+        .filter_box ul li button{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            border: 2px #d9d9d9 solid;
+            background-color: white;
+            border-radius: 25px;
+            height: 50px;
+            width: 100%;
+            padding: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .filter_box ul li button:hover{
+            border: 2px #deebff solid;
+            background-color: #deebff;
+        }
+        .filter_box ul li button:active{
+            background-color: #d9d9d9;
+            border: 2px #d9d9d9 solid;
+
+        }
+
+.filter_box_puce{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #deebff;
+    line-height: 50px;
+    left: -13px;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    color: #0065FC;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover .filter_box_puce{
+    background-color: #0065FC;
+    color: #deebff;
+}
+
+.info_txt{
+    display: flex;
+    margin: 15px 0;
+}
+.info_icon{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    border: 1px #d9d9d9 solid;
+    height:22px;
+    width:22px;
+    border-radius: 10px;
+    margin: 14px 10px;
+    color: #0065FC;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    }
+
+/*Section 01 & 02*/
+
+.center_main{
+
+    max-width: 1340px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Section 01 (Hébergement à Marseille)*/
+
+.heberg_mars_box{
+    
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 25px 3%;
+    margin: 25px 0;
+    width: 66%;
+    /*max-width: 880px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .heberg_mars_box h2{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .heberg_mars_box p{
+        width: 100%;
+    }
+    .heberg_mars_box p a{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+.heberg_card{
+    display: block;
+    width: 245px;
+    height: 200px;
+    margin: 15px 0;
+    border: 5px #FFF solid;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: #d9d9d9 0px 0px 12px;
+}
+
+.heberg_mars_img{
+    display: block;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 11px 11px 0 0;
+    width: 100%;
+    margin:0;
+    height: 115px;
+}
+.heberg_mars_infos{
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+    height: 75px;
+    border-radius: 0 0 11px 11px;
+    padding: 10px;
+    margin:0;
+}
+
+.heberg_card:hover .heberg_mars_infos{
+    background-color: #deebff;
+}
+
+.heberg_mars_infos h3{
+    font-size: 16px;
+    margin:0px 4px;
+}
+.heberg_mars_infos p{
+    font-size: 14px;
+    margin:4px;
+}
+
+.card_stars{
+    font-size: 12px;
+    margin:4px 10px 8px 4px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #0065FC;
+}
+.grey_star{
+    color: #d9d9d9;
+ }
+
+ /* Section 02 (Populaire à marseille)*/
+
+ .heberg_mars_pop_box{
+    
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 25px 3%;
+    width: 31%;
+    min-width: 345px;
+    /*max-width: 420px;*/
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.heberg_mars_pop_title{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.heberg_pop_card{
+    display: flex;
+    max-width: 345px;
+    min-width: 285px;
+    height: 145px;
+    margin: 15px 0;
+    border: 5px #FFF solid;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: #d9d9d9 0px 0px 12px;
+}
+
+.heberg_pop_card img{
+    display: block;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 11px 0 0 11px;
+    width: 125px;
+    min-width: 125px;
+    margin:0;
+    height: 135px;
+}
+.heberg_mars_pop_infos{
+    position: relative;
+    width: 100%;
+    max-width: 215px;
+    background-color: #FFF;
+    height: 135px;
+    border-radius: 0 11px 11px 0;
+    padding: 10px;
+    margin:0;
+}
+
+.heberg_pop_card:hover .heberg_mars_pop_infos{
+
+    background-color: #deebff;
+}
+
+.heberg_mars_pop_infos h3{
+    font-size: 16px;
+    margin:0px 4px;
+}
+.heberg_mars_pop_infos p{
+    font-size: 14px;
+    margin:4px;
+}
+
+
+
+/* --- Verson tablette --- */
+@media screen and (max-width: 992px) {
+
+/* Corps de la page */
+.top_main{
+    margin: 0 15px;
+}
+
+.filter_box ul li{
+    margin:5px 10px 5px 0;
+}
+
+.heberg_mars_box{
+    justify-content: space-around;
+}
+
+
+/*SECTION 01*/
+
+}
+
+/* --- Verson Portable --- */
+@media screen and (max-width: 768px) {
+
+/* Entète*/
+
+header{
+    width: 100%;
+    max-width: 768px;
+    margin: 20px 0;
+}
+
+.nav_box{
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+
+.nav_box ul{
+    display: flex; 
+    align-items: center;
+    width: 100%;
+
+}
+
+.nav_box ul li {
+    width: 50%;
+    margin: 0;
+}
+
+.nav_box ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    display: block; 
+    margin: 0;
+    width: 100%;
+    padding: 30px 21px 12px 21px;
+    border-bottom: 3px #F2F2F2 solid;
+}
+.nav_box ul li a:hover{
+    border-top: 0;
+    border-bottom: 3px #0065FC solid;
+    color: #0065FC;
+    padding: 30px 21px 12px 21px;
+}
+
+/* MAIN*/
+
+.heberg_button{
+    position: relative;
+    left: -15px;
+    border-radius: 15px 15px;
+    height: 50px;
+    width: 50px;
+}  
+.heberg_button_hidden01{
+    display: inline;
+}
+
+.heberg_button_hidden02{
+    display: none;
+
+}
+
+/*Section 01*/
+
+.center_main{
+    flex-direction: column-reverse;
+    }
+    
+.heberg_mars_box{
+        
+    background-color: #FFF;
+    border-radius: 0px;
+    padding: 10px 3%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.heberg_mars_pop_box{
+    border-radius: 0px;
+    padding: 25px 3%;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.heberg_card{
+    min-width: 245px;
+    max-width: 345px;
+    width: 100%;
+}
+    }

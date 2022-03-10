@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Site de réservation d'hébergement en ligne.">
+        <link rel="stylesheet" href="./css/normalize.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Booki - Trouvez votre hébergement pour des vacances de rêve.</title>
+    </head>
+    <body>
+    <!--  Entête de la page -->    
+        <header>
+            <nav class="nav_box">
+                <a href="#"><img id="logo_booki" src="./images/Booki.png" alt="Logo Booki" /></a>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!--  Fin de l'entête de la page --> 
+    <!-- Corps de la page -->   
+        <main>
+            <!-- Section du haut: recherche et filtre-->
+            <section class="top_main">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature.</p>
+
+                <form method="post" action="index.html" class="heberg_form">
+                    <label for="heberg_search"><i class="fas fa-location-dot"></i></label>
+                    <input type="search" name="heberg_search" id="heberg_search" placeholder="Marseille, France" >
+                    <button type="submit" value="Rechercher" class="heberg_button">
+                        <span class="heberg_button_hidden01"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="heberg_button_hidden02">Rechercher</span>
+                    </button>
+                </form>
+                <div class="filter_box">
+                    <h3>Filtres</h3>
+                    <ul>
+                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-money-bill-wave"></i></div>Economique</button></li>
+                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-child"></i></div>Familial</button></li>
+                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-heart"></i></div>Romantique</button></li>
+                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-dog"></i></div>Animaux autorisés</button></li>
+                    </ul>
+                </div>
+                <div class="info_txt">
+                    <div class="info_icon"><i class="fa-solid fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponible dans cette ville.</p>
+                </div>
+            </section>
+            <!-- Fin section recherche et filtre-->
+            <!-- Section centrale: Hébergement et plus populaire-->
+            <section class="center_main">
+                <!-- Hébergement à marseille-->
+                <section class="heberg_mars_box">
+                    <h2>Hébergements à Marseille</h2>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_aubergelacannebiere.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotelduport.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 56€</p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotellesmouettes.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Hôtel les mouettes</h3>
+                                <p>Nuit à partir de 76€</p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hoteldelamer.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46€</p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                                    <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_aubergelepanier.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Auberge le Panier</h3>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotelchezamina.jpg"/>
+                            <div class="heberg_mars_infos">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96€</p>
+                                <ul class="card_stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                    <p><a href="#">Afficher plus</a></p>
+                </section>
+                <!-- Fin section hébergement à marseille-->
+                <!-- Les plus populaire -->
+                <section class="heberg_mars_pop_box">
+                    <h2 class="heberg_mars_pop_title"><div>Les plus populaires</div><div><i class="fa-solid fa-chart-line"></i></div></h2>
+
+                    <a href="#" class="heberg_pop_card"><img src="images/heberg/heberg_mars_hotellesoleildumatin.jpg"/>
+                        <div class="heberg_mars_pop_infos">
+                            <h3>Hôtel le soleil du matin</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <ul class="card_stars">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="heberg_pop_card"><img src="images/heberg/heberg_mars_aucoeurdeleau.jpg"/>
+                        <div class="heberg_mars_pop_infos">
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>Nuit à partir de 71€</p>
+                            <ul class="card_stars">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="heberg_pop_card"><img src="images/heberg/heberg_mars_hoteltoutbleuetblanc.jpg"/>
+                        <div class="heberg_mars_pop_infos">
+                            <h3>Hôtel tout bleu et blanc</h3>
+                            <p>Nuit à partir de 68€</p>
+                            <ul class="card_stars">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li class="grey_star"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                    </a>
+                </section>
+                <!-- Fin section les plus populaire-->
+            </section>
+            <!-- Fin de la section centrale-->
+            <!-- Activité à marseille-->
+        </main>
+    <!-- Fin de la page -->  
+        <footer>
+
+        </footer>
+    </body>
+</html>
