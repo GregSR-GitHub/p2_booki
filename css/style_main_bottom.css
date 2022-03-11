@@ -1,0 +1,144 @@
+.main_bottom{
+
+    max-width: 1340px;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+}
+
+.main_bottom h2{
+    width: 100%;
+    max-width: 1340px;
+    margin: 10px 0;
+}
+
+.activ_mars_box{
+    
+    width: 100%;
+    height: 465px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.activ_mars_column{
+    
+    max-width: 302px;
+    width: 100%;
+    min-width: 232px;
+    height: 445px;
+    margin: 10px 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.activ_card{
+    display: block;
+    width: 100%;
+    min-width: 232px;
+    max-width: 302px;
+    margin: 10px 2px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: #d9d9d9 0px 0px 12px;
+}
+
+.activ_mars_column .activ_card{
+    margin: 0;
+}
+
+.activ_card .heberg_mars_img {
+
+    height: 390px;
+}
+.activ_mars_infos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #FFF;
+    height: 55px;
+    border-radius: 0 0 11px 11px;
+    padding: 10px;
+    margin:0;
+}
+
+.activ_mars_infos h3{
+    font-size: 16px;
+    margin:0px 4px;
+}
+
+/* --- Exclusif à la version bureau --- */
+
+@media screen and (min-width: 769px) {
+    .activ_mars_column:nth-of-type(1) .activ_card:nth-child(1) .heberg_mars_img{
+        height: 170px;
+    }
+    .activ_mars_column:nth-of-type(1) .activ_card:nth-child(2) .heberg_mars_img{
+        height: 125px;
+    }
+    .activ_mars_column:nth-of-type(2) .activ_card:nth-child(1) .heberg_mars_img{
+        height: 135px;
+    }
+    .activ_mars_column:nth-of-type(2) .activ_card:nth-child(2) .heberg_mars_img{
+        height: 160px;
+    }
+}
+
+/* --- Verson tablette --- */
+
+@media screen and (max-width: 992px) {
+
+    .main_bottom{
+        padding: 5px 3%;
+    }
+    .activ_mars_box{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+}
+
+
+/* --- Verson Portable --- */
+@media screen and (max-width: 768px) {
+
+    .activ_mars_box{
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 100%;
+    }
+
+    .activ_mars_column{
+    
+        max-width: 345px;
+        width: 100%;
+        min-width: 345px;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    
+    .activ_card{
+        width: 100%;
+        min-width: 345px;
+        max-width: 345px;
+        margin: 20px 0;
+        height: 190px;
+    }
+
+    .activ_card .heberg_mars_img {
+
+        height: 135px;
+    }
+
+    .activ_mars_column .activ_card{
+        margin: 20px 0;
+    }
+
+}
