@@ -1,0 +1,333 @@
+/*Verson Bureau*/
+
+/*Section 01 & 02*/
+
+.main_center{
+
+    max-width: 1340px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Section 01 (Hébergement à Marseille)*/
+
+.heberg_mars_backgd{
+    
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 25px 1%;
+    margin: 25px 0;
+    width: 66%;
+    min-width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heberg_mars_box{
+    
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heberg_mars_row{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.heberg_mars_backgd h2{
+    width: 100%;
+    max-width: 800px;
+    margin: 10px 0;
+}
+.heberg_mars_backgd p{
+    width: 100%;
+    max-width: 800px;
+}
+.heberg_mars_backgd p a{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.heberg_card{
+    display: block;
+    width: 245px;
+    height: 200px;
+    min-width: 215px;
+    margin: 15px 2px;
+    border: 5px #FFF solid;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: #d9d9d9 0px 0px 12px;
+}
+
+.heberg_mars_img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 11px 11px 0 0;
+    width: 100%;
+    margin:0;
+    height: 115px;
+}
+.heberg_mars_infos{
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+    height: 75px;
+    border-radius: 0 0 11px 11px;
+    padding: 10px;
+    margin:0;
+}
+
+.heberg_card:hover .heberg_mars_infos{
+    background-color: #deebff;
+}
+
+.heberg_mars_infos h3{
+    font-size: 16px;
+    margin:0px 4px;
+}
+.heberg_mars_infos p{
+    font-size: 14px;
+    margin:4px;
+}
+
+.card_stars{
+    font-size: 12px;
+    margin:4px 10px 8px 4px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #0065FC;
+}
+.grey_star{
+    color: #d9d9d9;
+ }
+
+ /* Section 02 (Populaire à marseille)*/
+
+ .heberg_mars_pop_backgd{
+    
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 25px 1%;
+    width: 31%;
+    min-width: 305px;
+    /*max-width: 420px;*/
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+ .heberg_mars_pop_box{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heberg_mars_pop_title{
+    width: 100%;
+    max-width: 345px;
+    min-width: 255px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.heberg_mars_pop_box .heberg_card{
+    display: flex;
+    max-width: 345px;
+    min-width: 255px;
+    height: 145px;
+    width: auto;
+
+}
+
+.heberg_mars_pop_box .heberg_mars_img{
+    border-radius: 11px 0 0 11px;
+    width: 125px;
+    min-width: 125px;
+    height: 135px;
+}
+.heberg_mars_pop_box .heberg_mars_infos{
+    max-width: 215px;
+    height: 135px;
+    border-radius: 0 11px 11px 0;
+ 
+}
+
+/* --- Verson tablette --- */
+@media screen and (max-width: 992px) {
+
+
+    /*SECTION 01*/
+
+    .main_center{
+        flex-direction: column-reverse;
+    }
+
+    .heberg_mars_backgd{
+            
+        background-color: #FFF;
+        border-radius: 0px;
+        padding: 10px 3%;
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        margin: 0;
+    }
+
+    .heberg_mars_backgd h2{
+        max-width: 100%;
+    }
+
+    .heberg_mars_box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .heberg_mars_row{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heberg_mars_pop_backgd{
+        border-radius: 0px;
+        padding: 25px 3%;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .heberg_mars_pop_title{
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .heberg_mars_pop_box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .heberg_mars_box .heberg_card{
+        min-width: 245px;
+        max-width: 345px;
+        width: 100%;
+
+        
+    }
+
+    .heberg_mars_pop_box .heberg_card{
+        display: block;
+        max-width: 245px;
+        min-width: 225px;
+        height: 225px;
+        width: 245px;
+    
+    }
+    
+    .heberg_mars_pop_box .heberg_mars_img{
+
+        border-radius: 11px 11px 0 0;
+        width: 100%;
+        min-width:auto;
+        max-width: auto;
+        height: 120px;
+    }
+    .heberg_mars_pop_box .heberg_mars_infos{
+        max-width: none;
+        height: 95px;
+        border-radius: 0 0 11px 11px;
+     
+    }
+
+}
+
+/* --- Verson Portable --- */
+@media screen and (max-width: 768px) {
+
+
+    /* MAIN*/
+
+    .heberg_button{
+        position: relative;
+        left: -15px;
+        border-radius: 15px 15px;
+        height: 50px;
+        width: 50px;
+    }  
+    .heberg_button_hidden01{
+        display: inline;
+    }
+
+    .heberg_button_hidden02{
+        display: none;
+
+    }
+
+    /*Section 01*/
+        
+    .heberg_mars_backgd{
+            
+        background-color: #FFF;
+        border-radius: 0px;
+        padding: 10px 3%;
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .heberg_mars_box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .heberg_mars_box .heberg_card{
+        min-width: 345px;
+    }
+
+    .heberg_mars_pop_box{
+            
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heberg_mars_pop_box .heberg_card{
+        display: flex;
+        max-width: 345px;
+        min-width: 345px;
+        height: 145px;
+        width: auto;
+    
+    }
+    
+    .heberg_mars_pop_box .heberg_mars_img{
+        border-radius: 11px 0 0 11px;
+        width: 125px;
+        min-width: 125px;
+        height: 135px;
+    }
+    .heberg_mars_pop_box .heberg_mars_infos{
+        max-width: 215px;
+        height: 135px;
+        border-radius: 0 11px 11px 0;
+     
+    }
+
+}

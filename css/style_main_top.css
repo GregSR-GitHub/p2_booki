@@ -1,0 +1,168 @@
+/* Corps de la page */
+
+main{
+    width: 100%;
+    max-width: 1342px;
+    margin: 10px auto;
+}
+
+
+/* Section recherche et filtres*/
+
+.main_top{
+    margin: 0 0;
+
+}
+
+h1{
+    margin: 10px 0;
+    font-size: 22px;
+}
+h1 + p{
+    margin: 3px 0;
+}
+
+.heberg_form{
+    display: flex;
+    height: 50px;
+    margin: 25px 0 35px 0;
+}
+.heberg_form label{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    padding-top: 14px;
+}
+
+#heberg_search{
+    height: 50px;
+    width: 235px;
+    border: 1px #F2F2F2 solid;
+}
+
+.heberg_button{
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    height: 50px;
+    width: 135px;
+    border: 1px #0065FC solid;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.heberg_button:hover{
+    background-color: white;
+    color: #0065FC;
+
+}
+.heberg_button_hidden01{
+    display: none;
+}
+
+.heberg_button_hidden02{
+    display: inline;
+
+}
+
+.filter_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter_box h3{
+    line-height: 50px;
+    margin: 5px 30px 5px 0; 
+}
+
+.filter_box ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter_box ul li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:5px 20px 5px 0;
+}
+.filter_box ul li button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 2px #d9d9d9 solid;
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter_box ul li button:hover{
+    border: 2px #deebff solid;
+    background-color: #deebff;
+}
+.filter_box ul li button:active{
+    background-color: #d9d9d9;
+    border: 2px #d9d9d9 solid;
+
+}
+
+.filter_box_puce{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #deebff;
+    line-height: 50px;
+    left: -13px;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    color: #0065FC;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover .filter_box_puce{
+    background-color: #0065FC;
+    color: #deebff;
+}
+
+.info_txt{
+    display: flex;
+    margin: 15px 0;
+}
+.info_icon{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    border: 1px #d9d9d9 solid;
+    height:22px;
+    width:22px;
+    border-radius: 10px;
+    margin: 14px 10px;
+    color: #0065FC;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+    }
+
+/* --- Verson tablette --- */
+@media screen and (max-width: 992px) {
+
+    /* Corps de la page */
+
+    .main_top{
+        margin: 0 15px;
+    }
+
+    .filter_box ul li{
+        margin:5px 10px 5px 0;
+    }
+}
