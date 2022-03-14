@@ -11,13 +11,14 @@
         <link rel="stylesheet" href="./css/style_main_top.css">
         <link rel="stylesheet" href="./css/style_main_center.css">
         <link rel="stylesheet" href="./css/style_main_bottom.css">
+        <link rel="stylesheet" href="./css/style_footer.css">
         <title>Booki - Trouvez votre hébergement pour des vacances de rêve.</title>
     </head>
     <body>
         <!--  Entête de la page -->    
         <header>
-            <nav class="nav_box">
-                <a href="#"><img class="logo_booki" src="./images/Booki.png" alt="Logo Booki" /></a>
+            <nav class="nav-top">
+                <a href="#"><img class="logo" src="./images/Booki.png" alt="Logo Booki" /></a>
                 <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
@@ -28,25 +29,25 @@
         <!-- Corps de la page -->   
         <main>
             <!-- Section du haut: recherche et filtre-->
-            <section class="main_top">
+            <section class="main-top">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature.</p>
 
-                <form method="post" action="index.html" class="heberg_form">
-                    <label for="heberg_search"><i class="fas fa-location-dot"></i></label>
-                    <input type="search" name="heberg_search" id="heberg_search" placeholder="Marseille, France" >
-                    <button type="submit" value="Rechercher" class="heberg_button">
-                        <span class="heberg_button_hidden01"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span class="heberg_button_hidden02">Rechercher</span>
+                <form method="post" action="index.html" class="search">
+                    <label for="search_search"><i class="fas fa-location-dot"></i></label>
+                    <input type="search" name="localisation" id="search_search" placeholder="Marseille, France" >
+                    <button type="submit" value="Rechercher" class="search_button">
+                        <span class="search_button-hidden01"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="search_button-hidden02">Rechercher</span>
                     </button>
                 </form>
-                <div class="filter_box">
+                <div class="filters">
                     <h3>Filtres</h3>
                     <ul>
-                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-money-bill-wave"></i></div>Economique</button></li>
-                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-child"></i></div>Familial</button></li>
-                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-heart"></i></div>Romantique</button></li>
-                        <li><button type="button"><div class="filter_box_puce"><i class="fa-solid fa-dog"></i></div>Animaux autorisés</button></li>
+                        <li><button type="button"><div class="filters_puce"><i class="fa-solid fa-money-bill-wave"></i></div>Economique</button></li>
+                        <li><button type="button"><div class="filters_puce"><i class="fa-solid fa-child"></i></div>Familial</button></li>
+                        <li><button type="button"><div class="filters_puce"><i class="fa-solid fa-heart"></i></div>Romantique</button></li>
+                        <li><button type="button"><div class="filters_puce"><i class="fa-solid fa-dog"></i></div>Animaux autorisés</button></li>
                     </ul>
                 </div>
                 <div class="info_txt">
@@ -56,15 +57,15 @@
             </section>
             <!-- Fin section recherche et filtre-->
             <!-- Section centrale: Hébergement et plus populaire-->
-            <section class="main_center">
+            <section class="main-center">
                 <!-- Hébergement à marseille-->
-                <section class="heberg_mars_backgd">
+                <section class="heberg-backgd">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="heberg_mars_box">
+                    <div class="heberg">
                         <!-- Première ligne -->
-                        <div class="heberg_mars_row">
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_aubergelacannebiere.jpg"/>
-                                <div class="heberg_mars_infos">
+                        <div class="heberg_row">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aubergelacannebiere.jpg"/>
+                                <div class="card_infos">
                                     <h3>Auberge la Cannebière</h3>
                                     <p>Nuit à partir de <strong>25€</strong></p>
                                     <ul class="card_stars">
@@ -76,8 +77,8 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotelduport.jpg"/>
-                                <div class="heberg_mars_infos">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotelduport.jpg"/>
+                                <div class="card_infos">
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de 56€</p>
                                     <ul class="card_stars">
@@ -89,8 +90,8 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotellesmouettes.jpg"/>
-                                <div class="heberg_mars_infos">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotellesmouettes.jpg"/>
+                                <div class="card_infos">
                                     <h3>Hôtel les mouettes</h3>
                                     <p>Nuit à partir de 76€</p>
                                     <ul class="card_stars">
@@ -105,9 +106,9 @@
                         </div>
                         <!-- Fin première ligne -->
                         <!-- Seconde ligne -->
-                        <div class="heberg_mars_row">
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hoteldelamer.jpg"/>
-                                <div class="heberg_mars_infos">
+                        <div class="heberg_row">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hoteldelamer.jpg"/>
+                                <div class="card_infos">
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de 46€</p>
                                     <ul class="card_stars">
@@ -119,8 +120,8 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_aubergelepanier.jpg"/>
-                                <div class="heberg_mars_infos">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aubergelepanier.jpg"/>
+                                <div class="card_infos">
                                     <h3>Auberge le Panier</h3>
                                     <p>Nuit à partir de <strong>23€</strong></p>
                                     <ul class="card_stars">
@@ -132,8 +133,8 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotelchezamina.jpg"/>
-                                <div class="heberg_mars_infos">
+                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotelchezamina.jpg"/>
+                                <div class="card_infos">
                                     <h3>Hôtel chez Amina</h3>
                                     <p>Nuit à partir de 96€</p>
                                     <ul class="card_stars">
@@ -152,11 +153,11 @@
                 </section>
                 <!-- Fin section hébergement à marseille-->
                 <!-- Les plus populaire -->
-                <section class="heberg_mars_pop_backgd">
-                    <h2 class="heberg_mars_pop_title"><div>Les plus populaires</div><div><i class="fa-solid fa-chart-line"></i></div></h2>
-                    <div class="heberg_mars_pop_box">
-                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hotellesoleildumatin.jpg"/>
-                            <div class="heberg_mars_infos">
+                <section class="pop-backgd">
+                    <h2 class="pop_title"><div>Les plus populaires</div><div><i class="fa-solid fa-chart-line"></i></div></h2>
+                    <div class="pop">
+                        <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotellesoleildumatin.jpg"/>
+                            <div class="card_infos">
                                 <h3>Hôtel le soleil du matin</h3>
                                 <p>Nuit à partir de 96€</p>
                                 <ul class="card_stars">
@@ -168,8 +169,8 @@
                                 </ul>
                             </div>
                         </a>
-                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_aucoeurdeleau.jpg"/>
-                            <div class="heberg_mars_infos">
+                        <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aucoeurdeleau.jpg"/>
+                            <div class="card_infos">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
                                 <ul class="card_stars">
@@ -181,8 +182,8 @@
                                 </ul>
                             </div>
                         </a>
-                        <a href="#" class="heberg_card"><img class="heberg_mars_img" src="images/heberg/heberg_mars_hoteltoutbleuetblanc.jpg"/>
-                            <div class="heberg_mars_infos">
+                        <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hoteltoutbleuetblanc.jpg"/>
+                            <div class="card_infos">
                                 <h3>Hôtel tout bleu et blanc</h3>
                                 <p>Nuit à partir de 68€</p>
                                 <ul class="card_stars">
@@ -200,34 +201,34 @@
             </section>
             <!-- Fin de la section centrale-->
             <!-- Activité à marseille-->
-            <section class="main_bottom">
+            <section class="main-bottom">
                 <h2>Activités à Marseille</h2>
-                <div class="activ_mars_box">
+                <div class="activ">
                     <!-- Colonne 01-->
-                    <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/vieuxport.jpg"/>
-                        <div class="activ_mars_infos"><h3>Vieux Port</h3></div>
+                    <a href="#" class="card"><img class="card_img" src="images/activites/vieuxport.jpg"/>
+                        <div class="card_infos"><h3>Vieux Port</h3></div>
                     </a>
                     <!-- Colonne 02-->
-                    <div class="activ_mars_column">
-                        <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/fortdepomegues.jpg"/>
-                            <div class="activ_mars_infos"><h3>Fort de Pomègues</h3></div>
+                    <div class="activ_column">
+                        <a href="#" class="card"><img class="card_img" src="images/activites/fortdepomegues.jpg"/>
+                            <div class="card_infos"><h3>Fort de Pomègues</h3></div>
                         </a>
 
-                        <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/ilesdufrioul.jpg"/>
-                            <div class="activ_mars_infos"><h3>Îles du Frioul</h3></div>
+                        <a href="#" class="card"><img class="card_img" src="images/activites/ilesdufrioul.jpg"/>
+                            <div class="card_infos"><h3>Îles du Frioul</h3></div>
                         </a>
                     </div>
                     <!-- Colonne 03-->
-                        <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/parcnationaldescalanques.jpg"/>
-                            <div class="activ_mars_infos"><h3>Parc National des Calanques</h3></div>
+                        <a href="#" class="card"><img class="card_img" src="images/activites/parcnationaldescalanques.jpg"/>
+                            <div class="card_infos"><h3>Parc National des Calanques</h3></div>
                         </a>
                     <!-- Colonne 04-->
-                    <div class="activ_mars_column">   
-                        <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/notre-dame-de-la-garde.jpg"/>
-                        <div class="activ_mars_infos"><h3>Notre-Dame-de-la-Garde</h3></div>
+                    <div class="activ_column">   
+                        <a href="#" class="card"><img class="card_img" src="images/activites/notre-dame-de-la-garde.jpg"/>
+                        <div class="card_infos"><h3>Notre-Dame-de-la-Garde</h3></div>
                     </a>
-                    <a href="#" class="activ_card"><img class="heberg_mars_img" src="images/activites/parclongchamp.jpg"/>
-                        <div class="activ_mars_infos"><h3>Parc Longchamp</h3></div>
+                    <a href="#" class="card"><img class="card_img" src="images/activites/parclongchamp.jpg"/>
+                        <div class="card_infos"><h3>Parc Longchamp</h3></div>
                     </a>
                     </div>
                     <!-- Fin des Colonnes-->
@@ -236,10 +237,33 @@
             <!-- Fin de la section Activité à marseille-->
         </main>
         <!-- Fin du corps de la page -->  
-        <!-- Pied de page -->  
-        <footer>
-
-        </footer>
+        <!-- Pied de page --> 
+        <div class="footer-backgd">
+            <footer>
+                <div class="f-column">
+                    <span class="f-column_title">A propos</span>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="f-column">
+                    <span  class="f-column_title">Nos Hébergements</span>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="f-column">
+                    <span  class="f-column_title">Assistance</span>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div> 
         <!-- Fin du pied de page --> 
     </body>
 </html>

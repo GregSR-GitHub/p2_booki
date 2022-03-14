@@ -9,7 +9,7 @@ main{
 
 /* Section recherche et filtres*/
 
-.main_top{
+.main-top{
     margin: 0 0;
 
 }
@@ -22,12 +22,12 @@ h1 + p{
     margin: 3px 0;
 }
 
-.heberg_form{
+.search{
     display: flex;
     height: 50px;
     margin: 25px 0 35px 0;
 }
-.heberg_form label{
+.search label{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: #F2F2F2;
@@ -38,13 +38,13 @@ h1 + p{
     padding-top: 14px;
 }
 
-#heberg_search{
+#search_search{
     height: 50px;
     width: 235px;
     border: 1px #F2F2F2 solid;
 }
 
-.heberg_button{
+.search_button{
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     height: 50px;
@@ -55,41 +55,41 @@ h1 + p{
     font-weight: bold;
 }
 
-.heberg_button:hover{
+.search_button:hover{
     background-color: white;
     color: #0065FC;
 
 }
-.heberg_button_hidden01{
+.search_button-hidden01{
     display: none;
 }
 
-.heberg_button_hidden02{
+.search_button-hidden02{
     display: inline;
 
 }
 
-.filter_box{
+.filters{
     display: flex;
     flex-wrap: wrap;
 }
-.filter_box h3{
+.filters h3{
     line-height: 50px;
     margin: 5px 30px 5px 0; 
 }
 
-.filter_box ul{
+.filters ul{
     display: flex;
     flex-wrap: wrap;
 }
 
-.filter_box ul li{
+.filters ul li{
     display: flex;
     text-align: center;
     align-items: center;
     margin:5px 20px 5px 0;
 }
-.filter_box ul li button{
+.filters ul li button{
     display: flex;
     text-align: center;
     align-items: center;
@@ -103,17 +103,17 @@ h1 + p{
     font-weight: bold;
 }
 
-.filter_box ul li button:hover{
+.filters ul li button:hover{
     border: 2px #deebff solid;
     background-color: #deebff;
 }
-.filter_box ul li button:active{
+.filters ul li button:active{
     background-color: #d9d9d9;
     border: 2px #d9d9d9 solid;
 
 }
 
-.filter_box_puce{
+.filters_puce{
     display: inline-block;
     position: relative;
     text-align: center;
@@ -129,7 +129,7 @@ h1 + p{
     font-weight: bold;
 }
 
-button:hover .filter_box_puce{
+button:hover .filters_puce{
     background-color: #0065FC;
     color: #deebff;
 }
@@ -158,11 +158,11 @@ button:hover .filter_box_puce{
 
     /* Corps de la page */
 
-    .main_top{
+    .main-top{
         margin: 0 15px;
     }
 
-    .filter_box ul li{
+    .filters ul li{
         margin:5px 10px 5px 0;
     }
 }
