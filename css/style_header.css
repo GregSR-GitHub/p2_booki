@@ -5,10 +5,17 @@
 header{
     width: 100%;
     max-width: 1340px;
+    min-width: 370px;
     margin: auto;
     margin-bottom: 30px;
 }
 
+.logo{
+    height: 45px;
+    margin: 0 15px;
+}
+
+/* Menu */
 .nav-top{
     display: flex; 
     justify-content: space-between;
@@ -40,10 +47,6 @@ header{
     padding: 46px 21px 26px 21px;
 }
 
-.logo{
-    height: 45px;
-    margin: 0 15px;
-}
 
 /* --- Verson Portable --- */
 @media screen and (max-width: 768px) {
@@ -55,6 +58,8 @@ header{
         max-width: 768px;
         margin: 20px 0;
     }
+
+    /* Menu */
 
     .nav-top{
         display: flex; 

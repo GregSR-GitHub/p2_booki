@@ -2,28 +2,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
-* {
+*{
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
-   }
+}
 
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding:0;
-  }
-  .h1, h2, h3{
+}
+
+.h1, h2, h3{
     margin: 0;
 }
 
 a{
     text-decoration: none;
+    color: #000;
 }
 a:visited{
-    color: #000;;
+    color: #000;
+}
+
+   /* Centrage de la page */
+
+.main-wrapper{
+    width: 100%;
+    max-width: 1346px;
+    margin: 0 auto;
+    padding: 0 3px;
+}
+
+ /* Vesion tablette et portable*/
+
+@media screen and (max-width: 992px) {
+
+    .main-wrapper{
+        padding: 0;
+    }
+    
 }

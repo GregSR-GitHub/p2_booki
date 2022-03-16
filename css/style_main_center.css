@@ -20,7 +20,7 @@
     padding: 25px 1%;
     margin: 0;
     width: 66%;
-    min-width: 670px;
+    min-width: 672px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -31,7 +31,7 @@
 .heberg{
     
     width: 100%;
-    max-width: 800px;
+    max-width: 804px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -49,10 +49,12 @@
     max-width: 800px;
     margin: 10px 0;
 }
+
 .heberg-backgd p{
     width: 100%;
     max-width: 800px;
 }
+
 .heberg-backgd p a{
     font-weight: bold;
     font-size: 16px;
@@ -62,42 +64,43 @@
     display: block;
     width: 245px;
     height: 200px;
-    min-width: 215px;
+    min-width: 214px;
     margin: 15px 2px;
     border: 5px #FFF solid;
     background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: #d9d9d9 0px 0px 12px;
+    border-radius: 20px;
+    box-shadow: #d9d9d9 2px 2px 12px;
 }
 
 .card_img{
     display: block;
     object-fit: cover;
     object-position: center;
-    border-radius: 11px 11px 0 0;
+    border-radius: 15px 15px 0 0;
     width: 100%;
     margin:0;
     height: 115px;
 }
+
 .card_infos{
     position: relative;
     width: 100%;
     background-color: #FFF;
     height: 75px;
-    border-radius: 0 0 11px 11px;
-    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    padding: 10px 5%;
     margin:0;
 }
 
 .card:hover .card_infos{
     background-color: #deebff;
-    color: #0065FC;
 }
 
 .card_infos h3{
     font-size: 16px;
     margin:0px 4px;
 }
+
 .card_infos p{
     font-size: 14px;
     margin:4px;
@@ -111,9 +114,10 @@
     bottom: 0;
     color: #0065FC;
 }
+
 .grey_star{
     color: #d9d9d9;
- }
+}
 
  /* Section 02 (Populaire à marseille)*/
 
@@ -122,15 +126,15 @@
     background-color: #F2F2F2;
     border-radius: 25px;
     padding: 25px 1%;
-    width: 31%;
-    min-width: 305px;
-    /*max-width: 420px;*/
+    width: 31.5%;
+    min-width: 300px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
 }
+
  .pop{
     
     display: flex;
@@ -149,38 +153,41 @@
 
 .pop .card{
     display: flex;
-    max-width: 345px;
-    min-width: 255px;
-    height: 145px;
+    max-width: 343px;
+    min-width: 245px;
+    height: 144px;
     width: auto;
 
 }
 
 .pop .card_img{
-    border-radius: 11px 0 0 11px;
-    width: 125px;
-    min-width: 125px;
-    height: 135px;
+    border-radius: 15px 0 0 15px;
+    width: 127px;
+    min-width: 105px;
+    height: 134px;
 }
+
 .pop .card_infos{
-    max-width: 215px;
-    height: 135px;
-    border-radius: 0 11px 11px 0;
+    max-width: 206px;
+    height: 134px;
+    border-radius: 0 15px 15px 0;
+    padding: 12px 5%;
  
 }
 
 /* --- Verson tablette --- */
 @media screen and (max-width: 992px) {
 
-
-    /*SECTION 01*/
+    /*Section 01 & 02*/
 
     .main-center{
         flex-direction: column-reverse;
+        margin: 15px 0;
     }
 
+    /* Section 01 (Hébergement à Marseille)*/
+
     .heberg-backgd{
-            
         background-color: #FFF;
         border-radius: 0px;
         padding: 10px 3%;
@@ -205,6 +212,14 @@
         align-items: center;
     }
 
+    .heberg .card{
+        min-width: 245px;
+        max-width: 345px;
+        width: 100%;
+    }
+
+    /* Section 02 (Populaire à marseille)*/
+
     .pop-backgd{
         border-radius: 0px;
         padding: 25px 3%;
@@ -225,36 +240,26 @@
         width: 100%;
     }
 
-    .heberg .card{
-        min-width: 245px;
-        max-width: 345px;
-        width: 100%;
-
-        
-    }
-
     .pop .card{
         display: block;
         max-width: 245px;
         min-width: 225px;
         height: 225px;
         width: 245px;
-    
     }
     
     .pop .card_img{
-
-        border-radius: 11px 11px 0 0;
+        border-radius: 15px 15px 0 0;
         width: 100%;
-        min-width:auto;
-        max-width: auto;
+        min-width: auto;
+        max-width: none;
         height: 120px;
     }
     .pop .card_infos{
         max-width: none;
         height: 95px;
-        border-radius: 0 0 11px 11px;
-     
+        border-radius: 0 0 15px 15px;
+        padding: 12px;
     }
 
 }
@@ -263,28 +268,9 @@
 @media screen and (max-width: 768px) {
 
 
-    /* MAIN*/
-
-    .heberg_button{
-        position: relative;
-        left: -15px;
-        border-radius: 15px 15px;
-        height: 50px;
-        width: 50px;
-    }  
-    .heberg_button_hidden01{
-        display: inline;
-    }
-
-    .heberg_button_hidden02{
-        display: none;
-
-    }
-
     /*Section 01*/
         
     .heberg-backgd{
-            
         background-color: #FFF;
         border-radius: 0px;
         padding: 10px 3%;
@@ -304,6 +290,8 @@
         min-width: 345px;
     }
 
+    /*Section 02*/
+
     .pop{
             
         flex-direction: column;
@@ -312,24 +300,23 @@
 
     .pop .card{
         display: flex;
-        max-width: 345px;
-        min-width: 345px;
-        height: 145px;
+        max-width: 343px;
+        min-width: 343px;
+        height: 144px;
         width: auto;
-    
     }
     
     .pop .card_img{
-        border-radius: 11px 0 0 11px;
-        width: 125px;
-        min-width: 125px;
-        height: 135px;
+        border-radius: 15px 0 0 15px;
+        width: 127px;
+        min-width: 127px;
+        height: 134px;
     }
     .pop .card_infos{
-        max-width: 215px;
-        height: 135px;
-        border-radius: 0 11px 11px 0;
-     
+        max-width: 206px;
+        height: 134px;
+        border-radius: 0 15px 15px 0;
+        padding: 12px 5%;
     }
 
 }
