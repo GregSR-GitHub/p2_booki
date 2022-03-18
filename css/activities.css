@@ -122,7 +122,7 @@
     .activ_column{
         max-width: 345px;
         width: 100%;
-        min-width: 345px;
+        min-width: 280px;
         height: 100%;
         margin: 0;
         display: flex;
@@ -132,7 +132,7 @@
     
     .activ .card{
         width: 100%;
-        min-width: 345px;
+        min-width: 280px;
         max-width: 345px;
         margin: 20px 0;
         height: 190px;

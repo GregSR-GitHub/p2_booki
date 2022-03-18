@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/style_header.css">
-        <link rel="stylesheet" href="./css/style_main_top.css">
-        <link rel="stylesheet" href="./css/style_main_center.css">
-        <link rel="stylesheet" href="./css/style_main_bottom.css">
-        <link rel="stylesheet" href="./css/style_footer.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/search.css">
+        <link rel="stylesheet" href="./css/accommodation.css">
+        <link rel="stylesheet" href="./css/activities.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <title>Booki - Trouvez votre hébergement pour des vacances de rêve.</title>
     </head>
     <body>
@@ -31,13 +31,13 @@
             <!-- Corps de la page -->   
             <main>
                 <!-- Section du haut: recherche et filtre-->
-                <section class="main-top">
+                <section class="search">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature.</p>
 
-                    <form method="post" action="index.html" class="search">
+                    <form method="post" action="index.html" class="search_form">
                         <label for="search_search"><i class="fas fa-location-dot"></i></label>
-                        <input type="search" name="localisation" id="search_search" placeholder="Marseille, France" >
+                        <input type="search" name="localisation" id="search_search" class="search_search" placeholder="Marseille, France" >
                         <button type="submit" value="Rechercher" class="search_button">
                             <span class="search_button-hidden01"><i class="fa-solid fa-magnifying-glass"></i></span>
                             <span class="search_button-hidden02">Rechercher</span>
@@ -62,11 +62,11 @@
                 <!-- Section centrale: Hébergement et plus populaire-->
                 <div class="main-center">
                     <!-- Hébergement à marseille-->
-                    <section class="heberg-backgd">
+                    <section class="accom-backgd">
                         <h2>Hébergements à Marseille</h2>
-                        <div class="heberg">
+                        <div class="accom">
                             <!-- Première ligne -->
-                            <div class="heberg_row">
+                            <div class="accom_row">
                                 <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aubergelacannebiere.jpg"  alt="Auberge la Cannebière"/>
                                     <div class="card_infos">
                                         <h3>Auberge la Cannebière</h3>
@@ -109,7 +109,7 @@
                             </div>
                             <!-- Fin première ligne -->
                             <!-- Seconde ligne -->
-                            <div class="heberg_row">
+                            <div class="accom_row">
                                 <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hoteldelamer.jpg" alt="Hôtel de la mer"/>
                                     <div class="card_infos">
                                         <h3>Hôtel de la mer</h3>

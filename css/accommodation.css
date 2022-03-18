@@ -13,7 +13,7 @@
 
 /* Section 01 (Hébergement à Marseille)*/
 
-.heberg-backgd{
+.accom-backgd{
     
     background-color: #F2F2F2;
     border-radius: 25px;
@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.heberg{
+.accom{
     
     width: 100%;
     max-width: 804px;
@@ -36,7 +36,7 @@
     flex-wrap: wrap;
 }
 
-.heberg_row{
+.accom_row{
     
     width: 100%;
     display: flex;
@@ -44,18 +44,18 @@
     justify-content: space-between;
 }
 
-.heberg-backgd h2{
+.accom-backgd h2{
     width: 100%;
     max-width: 800px;
     margin: 10px 0;
 }
 
-.heberg-backgd p{
+.accom-backgd p{
     width: 100%;
     max-width: 800px;
 }
 
-.heberg-backgd p a{
+.accom-backgd p a{
     font-weight: bold;
     font-size: 16px;
 }
@@ -187,7 +187,7 @@
 
     /* Section 01 (Hébergement à Marseille)*/
 
-    .heberg-backgd{
+    .accom-backgd{
         background-color: #FFF;
         border-radius: 0px;
         padding: 10px 3%;
@@ -197,22 +197,22 @@
         margin: 0;
     }
 
-    .heberg-backgd h2{
+    .accom-backgd h2{
         max-width: 100%;
     }
 
-    .heberg{
+    .accom{
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    .heberg_row{
+    .accom_row{
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
     }
 
-    .heberg .card{
+    .accom .card{
         min-width: 245px;
         max-width: 345px;
         width: 100%;
@@ -270,7 +270,7 @@
 
     /*Section 01*/
         
-    .heberg-backgd{
+    .accom-backgd{
         background-color: #FFF;
         border-radius: 0px;
         padding: 10px 3%;
@@ -281,13 +281,13 @@
         flex-wrap: wrap;
     }
 
-    .heberg{
+    .accom{
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .heberg .card{
-        min-width: 345px;
+    .accom .card{
+        min-width: 280px;
     }
 
     /*Section 02*/
@@ -301,7 +301,7 @@
     .pop .card{
         display: flex;
         max-width: 343px;
-        min-width: 343px;
+        min-width: 280px;
         height: 144px;
         width: auto;
     }
@@ -309,7 +309,7 @@
     .pop .card_img{
         border-radius: 15px 0 0 15px;
         width: 127px;
-        min-width: 127px;
+        min-width: 100px;
         height: 134px;
     }
     .pop .card_infos{
