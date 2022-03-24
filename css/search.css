@@ -9,7 +9,7 @@ main{
 }
 
 
-/* Section recherche et filtres*/
+/* Section recherche*/
 
 .search{
     margin: 0 0;
@@ -77,6 +77,8 @@ h1 + p{
     display: inline;
 
 }
+
+/* Section filtres*/
 
 .filters{
     display: flex;
@@ -166,11 +168,13 @@ button:hover .filters_puce{
 /* --- Verson tablette --- */
 @media screen and (max-width: 992px) {
 
-    /* Section recherche et filtres*/
+    /* Section recherche*/
 
     .search{
         margin: 0 15px;
     }
+
+    /* Section filtres*/
 
     .filters ul li{
         margin:5px 10px 5px 0;
@@ -180,7 +184,7 @@ button:hover .filters_puce{
 /* --- Verson Portable --- */
 @media screen and (max-width: 768px) {
 
-    /* Section recherche et filtres*/
+    /* Section recherche*/
 
     .search_form{
         margin: 25px auto 35px auto;
