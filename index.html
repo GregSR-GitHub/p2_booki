@@ -22,8 +22,8 @@
                 <nav class="nav-top">
                     <a href="#"><img class="logo" src="./images/Booki@3x.png" alt="Logo Booki" /></a>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a href="#accom">Hébergements</a></li>
+                        <li><a href="#activ">Activités</a></li>
                     </ul>
                 </nav>
             </header>
@@ -62,12 +62,16 @@
                 <!-- Section centrale: Hébergement et plus populaire-->
                 <div class="main-center">
                     <!-- Hébergement à marseille-->
-                    <section class="accom-backgd">
+                    <section class="accom-backgd" id="accom">
                         <h2>Hébergements à Marseille</h2>
                         <div class="accom">
                             <!-- Première ligne -->
                             <div class="accom_row">
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aubergelacannebiere.jpg"  alt="Auberge la Cannebière"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/aubergelacannebiere.jpg"  
+                                    srcset="images/heberg/4_small/aubergelacannebiere.jpg 750w, images/heberg/3_medium/aubergelacannebiere.jpg 1499w, images/heberg/2_large/aubergelacannebiere.jpg 2997w, images/heberg/1_xlarge/aubergelacannebiere.jpg 5993w," 
+                                    alt="Auberge la Cannebière"/>
                                     <div class="card_infos">
                                         <h3>Auberge la Cannebière</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
@@ -80,7 +84,11 @@
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotelduport.jpg" alt="Hôtel du port"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/hotelduport.jpg" 
+                                    srcset="images/heberg/4_small/hotelduport.jpg 684w, images/heberg/3_medium/hotelduport.jpg 13684w, images/heberg/2_large/hotelduport.jpg 27364w, images/heberg/1_xlarge/hotelduport.jpg 54724w," 
+                                    alt="Hôtel du port"/>
                                     <div class="card_infos">
                                         <h3>Hôtel du port</h3>
                                         <p>Nuit à partir de 56€</p>
@@ -93,7 +101,11 @@
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotellesmouettes.jpg" alt=">Hôtel les mouettes"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/hotellesmouettes.jpg" 
+                                    srcset="images/heberg/4_small/hotellesmouettes.jpg 750w, images/heberg/3_medium/hotellesmouettes.jpg 1500w,images/heberg/2_large/hotellesmouettes.jpg 3000w,images/heberg/1_xlarge/hotellesmouettes.jpg 6000w," 
+                                    alt=">Hôtel les mouettes"/>
                                     <div class="card_infos">
                                         <h3>Hôtel les mouettes</h3>
                                         <p>Nuit à partir de 76€</p>
@@ -110,7 +122,11 @@
                             <!-- Fin première ligne -->
                             <!-- Seconde ligne -->
                             <div class="accom_row">
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hoteldelamer.jpg" alt="Hôtel de la mer"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/hoteldelamer.jpg" 
+                                    srcset="images/heberg/4_small/hoteldelamer.jpg 500w, images/heberg/3_medium/hoteldelamer.jpg 1000w, images/heberg/2_large/hoteldelamer.jpg 2000w, images/heberg/1_xlarge/hoteldelamer.jpg 4000w, "
+                                    alt="Hôtel de la mer"/>
                                     <div class="card_infos">
                                         <h3>Hôtel de la mer</h3>
                                         <p>Nuit à partir de 46€</p>
@@ -123,7 +139,11 @@
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aubergelepanier.jpg" alt="Auberge le Panier"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/aubergelepanier.jpg" 
+                                    srcset="images/heberg/4_small/aubergelepanier.jpg 652w, images/heberg/3_medium/aubergelepanier.jpg 1303w, images/heberg/2_large/aubergelepanier.jpg 2606w, images/heberg/1_xlarge/aubergelepanier.jpg 5212w, " 
+                                    alt="Auberge le Panier"/>
                                     <div class="card_infos">
                                         <h3>Auberge le Panier</h3>
                                         <p>Nuit à partir de <strong>23€</strong></p>
@@ -136,7 +156,11 @@
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotelchezamina.jpg" alt="Hôtel chez Amina"/>
+                                <a href="#" class="card">
+                                    <img class="card_img" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 992px) 33vw, 25vw" src="images/heberg/4_small/hotelchezamina.jpg" 
+                                    srcset="images/heberg/4_small/hotelchezamina.jpg 486w, images/heberg/3_medium/hotelchezamina.jpg 972w, images/heberg/2_large/hotelchezamina.jpg 1944w, images/heberg/1_xlarge/hotelchezamina.jpg 3888w, " 
+                                    alt="Hôtel chez Amina"/>
                                     <div class="card_infos">
                                         <h3>Hôtel chez Amina</h3>
                                         <p>Nuit à partir de 96€</p>
@@ -159,7 +183,11 @@
                     <section class="pop-backgd">
                         <h2 class="pop_title"><span>Les plus populaires</span><span><i class="fa-solid fa-chart-line"></i></span></h2>
                         <div class="pop">
-                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hotellesoleildumatin.jpg" alt="Hôtel le soleil du matin"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 50vw, (max-width: 992px) 33vw, 20vw" src="images/heberg/4_small/hotellesoleildumatin.jpg" 
+                                srcset="images/heberg/4_small/hotellesoleildumatin.jpg 532w, images/heberg/3_medium/hotellesoleildumatin.jpg 1063w, images/heberg/2_large/hotellesoleildumatin.jpg 2125w, images/heberg/1_xlarge/hotellesoleildumatin.jpg 4249w," 
+                                alt="Hôtel le soleil du matin"/>
                                 <div class="card_infos">
                                     <h3>Hôtel le soleil du matin</h3>
                                     <p>Nuit à partir de 96€</p>
@@ -172,7 +200,11 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_aucoeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 50vw, (max-width: 992px) 33vw, 20vw" src="images/heberg/4_small/aucoeurdeleau.jpg" 
+                                srcset="images/heberg/4_small/aucoeurdeleau.jpg 504w, images/heberg/3_medium/aucoeurdeleau.jpg 1008w, images/heberg/2_large/aucoeurdeleau.jpg 2016w, images/heberg/1_xlarge/aucoeurdeleau.jpg 4032w," 
+                                alt="Au coeur de l'eau Chambres d'hôtes"/>
                                 <div class="card_infos">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                     <p>Nuit à partir de 71€</p>
@@ -185,7 +217,11 @@
                                     </ul>
                                 </div>
                             </a>
-                            <a href="#" class="card"><img class="card_img" src="images/heberg/heberg_mars_hoteltoutbleuetblanc.jpg" alt="Hôtel tout bleu et blanc"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 50vw, (max-width: 992px) 33vw, 20vw" src="images/heberg/4_small/hoteltoutbleuetblanc.jpg" 
+                                srcset="images/heberg/4_small/hoteltoutbleuetblanc.jpg 500w, images/heberg/3_medium/hoteltoutbleuetblanc.jpg 1000w, images/heberg/2_large/hoteltoutbleuetblanc.jpg 2000w, images/heberg/1_xlarge/hoteltoutbleuetblanc.jpg 4000w," 
+                                alt="Hôtel tout bleu et blanc"/>
                                 <div class="card_infos">
                                     <h3>Hôtel tout bleu et blanc</h3>
                                     <p>Nuit à partir de 68€</p>
@@ -204,35 +240,59 @@
                 </div>
                 <!-- Fin de la section centrale-->
                 <!-- Activité à marseille-->
-                <section class="main-bottom">
+                <section class="main-bottom"  id="activ">
                     <h2>Activités à Marseille</h2>
                     <div class="activ">
                         <!-- Colonne 01-->
-                        <a href="#" class="card activ_column-01"><img class="card_img" src="images/activites/vieuxport.jpg" alt="Vieux Port"/>
+                        <a href="#" class="card activ_column-01">
+                            <img class="card_img" 
+                            sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/vieuxport.jpg" 
+                            srcset="images/activites/4_small/vieuxport.jpg 702w, images/activites/3_medium/vieuxport.jpg 1404w, images/activites/2_large/vieuxport.jpg 2808w, images/activites/1_xlarge/vieuxport.jpg 5616w" 
+                            alt="Vieux Port"/>
                             <div class="card_infos"><h3>Vieux Port</h3></div>
                         </a>
                         <!-- Colonne 02-->
                         <div class="activ_column activ_column-02">
-                            <a href="#" class="card"><img class="card_img" src="images/activites/fortdepomegues.jpg" alt="Fort de Pomègues"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/fortdepomegues.jpg"
+                                srcset="images/activites/4_small/fortdepomegues.jpg 356w, images/activites/3_medium/fortdepomegues.jpg 711w, images/activites/2_large/fortdepomegues.jpg 1422w, images/activites/1_xlarge/fortdepomegues.jpg 2843w," 
+                                alt="Fort de Pomègues"/>
                                 <div class="card_infos"><h3>Fort de Pomègues</h3></div>
                             </a>
 
-                            <a href="#" class="card"><img class="card_img" src="images/activites/ilesdufrioul.jpg" alt="Îles du Frioul"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/ilesdufrioul.jpg"
+                                srcset="images/activites/4_small/ilesdufrioul.jpg 648w, images/activites/3_medium/ilesdufrioul.jpg 1296w, images/activites/2_large/ilesdufrioul.jpg 2592w, images/activites/1_xlarge/ilesdufrioul.jpg 5184w," 
+                                alt="Îles du Frioul"/>
                                 <div class="card_infos"><h3>Îles du Frioul</h3></div>
                             </a>
                         </div>
                         <!-- Colonne 03-->
-                            <a href="#" class="card activ_column-03"><img class="card_img" src="images/activites/parcnationaldescalanques.jpg" alt="Parc National des Calanques"/>
-                                <div class="card_infos"><h3>Parc National des Calanques</h3></div>
-                            </a>
+                        <a href="#" class="card activ_column-03">
+                            <img class="card_img" 
+                            sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/parcnationaldescalanques.jpg" 
+                            srcset="images/activites/4_small/parcnationaldescalanques.jpg 606w, images/activites/3_medium/parcnationaldescalanques.jpg 1212w, images/activites/2_large/parcnationaldescalanques.jpg 2423w, images/activites/1_xlarge/parcnationaldescalanques.jpg 4846w,"
+                            alt="Parc National des Calanques"/>
+                            <div class="card_infos"><h3>Parc National des Calanques</h3></div>
+                        </a>
                         <!-- Colonne 04-->
                         <div class="activ_column activ_column-04">   
-                            <a href="#" class="card"><img class="card_img" src="images/activites/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde"/>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/notre-dame-de-la-garde.jpg" 
+                                srcset="images/activites/4_small/notre-dame-de-la-garde.jpg 589w, images/activites/3_medium/notre-dame-de-la-garde.jpg 1178w, images/activites/2_large/notre-dame-de-la-garde.jpg 2356w, images/activites/1_xlarge/notre-dame-de-la-garde.jpg 4712w," 
+                                alt="Notre-Dame-de-la-Garde"/>
                             <div class="card_infos"><h3>Notre-Dame-de-la-Garde</h3></div>
                         </a>
-                        <a href="#" class="card"><img class="card_img" src="images/activites/parclongchamp.jpg" alt="Parc Longchamp"/>
-                            <div class="card_infos"><h3>Parc Longchamp</h3></div>
-                        </a>
+                            <a href="#" class="card">
+                                <img class="card_img" 
+                                sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 25vw" src="images/activites/4_small/parclongchamp.jpg" 
+                                srcset="images/activites/4_small/parclongchamp.jpg 504w, images/activites/3_medium/parclongchamp.jpg 1008w, images/activites/2_large/parclongchamp.jpg 2016w, images/activites/1_xlarge/parclongchamp.jpg 4032w," 
+                                alt="Parc Longchamp"/>
+                                <div class="card_infos"><h3>Parc Longchamp</h3></div>
+                            </a>
                         </div>
                         <!-- Fin des Colonnes-->
                     </div>

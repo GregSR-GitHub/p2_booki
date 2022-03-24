@@ -303,7 +303,7 @@
         max-width: 343px;
         min-width: 265px;
         height: 144px;
-        width: auto;
+        width: 100%;
     }
     
     .pop .card_img{

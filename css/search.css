@@ -60,6 +60,7 @@ h1 + p{
     color: white;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -112,6 +113,7 @@ h1 + p{
     padding: 0 10px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .filters ul li button:hover{
