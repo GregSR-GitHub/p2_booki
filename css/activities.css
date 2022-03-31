@@ -60,7 +60,7 @@
 }
 
 
-/* --- Exclusif à la version bureau --- */
+/* --- Exclusif à la version bureau et tablette --- */
 
 @media screen and (min-width: 769px) {
     .activ_column-02 .card:nth-child(1) .card_img{
@@ -107,7 +107,6 @@
         order: 4;
     }
     
-
 }
 
 

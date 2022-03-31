@@ -44,6 +44,8 @@ footer{
 /* --- Verson Portable --- */
 @media screen and (max-width: 768px) {
 
+    /* Pied de page */
+    
     footer{
         flex-flow: column nowrap;
     }

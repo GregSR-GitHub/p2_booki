@@ -22,8 +22,7 @@
     width: 66%;
     min-width: 672px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -235,8 +234,7 @@
     }
 
     .pop{
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         width: 100%;
     }
 
@@ -282,8 +280,7 @@
     }
 
     .accom{
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
     }
 
     .accom .card{
