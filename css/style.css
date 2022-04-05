@@ -26,11 +26,12 @@ a{
     text-decoration: none;
     color: #000;
 }
+
 a:visited{
     color: #000;
 }
 
-   /* Centrage de la page */
+/* Centrage de la page */
 
 .main-wrapper{
     width: 100%;
@@ -39,7 +40,19 @@ a:visited{
     padding: 0 3px;
 }
 
- /* Vesion tablette et portable*/
+
+/* --- Verson Bureau et Tablette uniquement --- */
+
+@media screen and (min-width: 769px) {
+
+    /* Cacher éléments hors version portable*/
+
+    .desktop-hidden{
+        display: none;
+    }
+}
+
+/* Vesion tablette*/
 
 @media screen and (max-width: 992px) {
 
@@ -47,4 +60,14 @@ a:visited{
         padding: 0;
     }
     
+}
+/* --- Verson Portable --- */
+
+@media screen and (max-width: 768px) {
+
+    /* Cacher éléments en version portable*/
+    
+    .mobile-hidden{
+        display: none;
+    }
 }

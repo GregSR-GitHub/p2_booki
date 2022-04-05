@@ -68,14 +68,6 @@ h1 + p{
     color: #0065FC;
 }
 
-.search_button-hidden01{
-    display: none;
-}
-
-.search_button-hidden02{
-    display: inline;
-}
-
 /* Section filtres*/
 
 .filters{
@@ -190,15 +182,7 @@ h1 + p{
         margin: 25px auto 35px auto;
     }
 
-    .search_button-hidden01{
-        display: inline;
-    }
-
     .search_button{
         width: 50px;
-    }
-
-    .search_button-hidden02{
-        display: none;
     }
 }
